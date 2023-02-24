@@ -1,0 +1,97 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+
+body {
+  /* removing default margin */
+  margin: 0;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 2em;
+}
+.header, .footer {
+  background-color: #082B59;
+}
+.logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+a {
+  /* header and footer links */
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.info a{
+  /* content links */
+  color: #59331D;
+  text-decoration: underline;
+}
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.navigation > div {
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 1em;
+}
+.fa-solid {
+  color: white;
+  margin-right: 5px;
+}
+.divider {
+  border-top: 10px solid #d98555;
+}
+.card{
+  background-color: #59331D;
+  width: 200px;
+  border-radius: 10px;
+}
+.card img {
+  border-radius: 10px;
+  width: 100%;
+}
+.card p {
+  color: white;
+  padding-bottom: 1em;
+  margin: 1em;
+}
+.content {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  margin: 40px 15%;
+  gap: 20px;
+}
+.br {
+  /* custom line break */
+  display: block;
+  margin-bottom: 0.8em;
+}
+button {
+  background-color: #59331D;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1em;
+}
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+.footer p {
+  margin: 0;
+}
