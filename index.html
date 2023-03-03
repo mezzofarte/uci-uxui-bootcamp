@@ -36,8 +36,15 @@
         <a class="button" href="https://uxuicurriculum.wixsite.com/gulproast">Contact Us</a>
       </article>
       <figure>
-        <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg" alt="Making pour-over coffee at our shop." />
-        <figcaption>Our pour-over coffee is known for its freshness and amazing taste.</figcaption>
+        <picture>
+          <source media="(max-width:600px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg">
+          <source media="(min-width:601px) and (max-width:1000px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg">
+          <source media="(min-width:1001px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg">
+          <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg" alt="Making pour-over coffee at our shop." />
+          <figcaption>Our pour-over coffee is known for its freshness and amazing taste.</figcaption>
+        </picture>
+        <!-- <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg" alt="Making pour-over coffee at our shop." />
+        <figcaption>Our pour-over coffee is known for its freshness and amazing taste.</figcaption> -->
       </figure>
     </section>
   </div>

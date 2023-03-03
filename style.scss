@@ -80,6 +80,7 @@ figure {
     flex-basis: 25%;
     background-color: #59331d;
     border-radius: 10px;
+    max-width: 500px; // same as image
 }
 figure img {
     border-top-left-radius: 10px;
@@ -126,54 +127,47 @@ footer a {
 
 
 
-@media (min-width: 300px) {
-    body {
-        background-color: gold;
+@media (min-width: 320px) and (max-width: 600px) {
+    nav {
+        ul {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        li {
+            margin: 1rem;
+        }
     }
-    // nav {
-    //     ul {
-    //         flex-flow: column nowrap;
-    //         align-items: center;
-    //     }
-    //     li {
-    //         margin: 1rem;
-    //     }
-    // }
-    // .main {
-    //     flex-flow: column wrap;
-    // }
-    // article {
-    //     .button {
-    //         width: 100%;
-    //         box-sizing: border-box;
-    //     }
-    // }
+    .main {
+        flex-flow: column wrap;
+    }
+    article {
+        .button {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
 }
 
-@media (min-width: 768px) {
-    body {
-        background-color: red;
+@media (min-width: 601px) and (max-width: 1000px) {
+    article {
+        flex-basis: 53%;
     }
     figure {
+        flex-basis: 43%;
+        max-width: 308px; // same as image
         img {
-            height: 300px;
+            height: 500px;
             object-fit: cover;
         }
     }
 }
 
-@media (min-width: 992px) {
-    body {
-        background-color: burlywood;
-    }
+@media (min-width: 1001px) {
     article {
         flex-basis: 48%;
     }
     figure {
         flex-basis: 48%;
-        img {
-            height: unset;
-        }
     }
     nav {
         ul {

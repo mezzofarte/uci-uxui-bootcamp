@@ -95,6 +95,7 @@ figure {
   flex-basis: 25%;
   background-color: #59331d;
   border-radius: 10px;
+  max-width: 500px;
 }
 
 figure img {
@@ -146,33 +147,42 @@ footer a {
   padding: 0;
 }
 
-@media (min-width: 300px) {
-  body {
-    background-color: gold;
+@media (min-width: 320px) and (max-width: 600px) {
+  nav ul {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  nav li {
+    margin: 1rem;
+  }
+  .main {
+    flex-flow: column wrap;
+  }
+  article .button {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
-@media (min-width: 768px) {
-  body {
-    background-color: red;
+@media (min-width: 601px) and (max-width: 1000px) {
+  article {
+    flex-basis: 53%;
+  }
+  figure {
+    flex-basis: 43%;
+    max-width: 308px;
   }
   figure img {
-    height: 300px;
+    height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
-@media (min-width: 992px) {
-  body {
-    background-color: burlywood;
-  }
+@media (min-width: 1001px) {
   article {
     flex-basis: 48%;
   }
   figure {
     flex-basis: 48%;
-  }
-  figure img {
-    height: unset;
   }
   nav ul {
     flex-flow: row nowrap;
