@@ -161,6 +161,7 @@ footer a {
   article .button {
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
   }
 }
 @media (min-width: 601px) and (max-width: 1000px) {
