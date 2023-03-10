@@ -5,14 +5,14 @@ $gulp-blue: #082B59;
 $gulp-brown: #59331d;
 $gulp-orange: #d98555;
 
-@mixin noSpace {
-    padding: 0;
-    margin: 0;
+@mixin configSpace($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
 }
 
 body {
     // remove default margin
-    @include noSpace;
+    @include configSpace(0, 0);
     background-color: $gulp-blue;
     font-family: 'Lato', sans-serif;
     line-height: 2;
@@ -40,7 +40,7 @@ header {
 /* navbar styling */
 nav {
     ul {
-        @include noSpace;
+        @include configSpace(0, 0);
         list-style-type: none;
         display: flex;
         flex-flow: row wrap;
@@ -76,8 +76,7 @@ nav {
 /* sits inside of the white background, centered */
 .main {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    @include configSpace(2rem, 0 auto);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -104,8 +103,7 @@ figcaption {
     display: inline-block;
     background-color: #59331D;
     border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin: 0;
+    @include configSpace(0.5rem 1rem, 0);
     color: #f2f2f2;
     text-decoration: none;
     border: 3px solid $gulp-brown;
@@ -120,7 +118,7 @@ footer {
     border-top: 10px solid $gulp-orange;
     ul {
         list-style-type: none;
-        @include noSpace;
+        @include configSpace(0, 0);
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -129,8 +127,7 @@ footer {
         color: #f2f2f2;
         font-size: 2rem;
         display: block;
-        margin: 0 1rem 3rem 1rem;
-        padding: 0;
+        @include configSpace(0, 0 1rem 3rem 1rem);
     }
 }
 

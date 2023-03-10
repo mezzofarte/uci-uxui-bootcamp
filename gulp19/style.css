@@ -73,8 +73,8 @@ nav a:hover {
 /* sits inside of the white background, centered */
 .main {
   max-width: 1200px;
-  margin: 0 auto;
   padding: 2rem;
+  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -133,8 +133,8 @@ footer a {
   color: #f2f2f2;
   font-size: 2rem;
   display: block;
-  margin: 0 1rem 3rem 1rem;
   padding: 0;
+  margin: 0 1rem 3rem 1rem;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
