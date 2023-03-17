@@ -1,0 +1,29 @@
+/* this style keeps the Gulp logo from taking over the whole page. Adjust if needed to size correctly for your page. */
+
+$gulp-blue: #082B59;
+$gulp-brown: #59331d;
+$gulp-orange: #d98555;
+
+nav img, nav .img-fluid {
+    max-width: 150px;
+}
+
+nav .navbar-brand, nav .nav-link{
+    color: white;
+}
+
+.nav-link:hover {
+    color: $gulp-orange;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.bg-gulp {
+    background-color: $gulp-blue;
+}
+.border-gulp {
+    border-color: $gulp-orange !important;
+}

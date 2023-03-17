@@ -1,0 +1,26 @@
+/* this style keeps the Gulp logo from taking over the whole page. Adjust if needed to size correctly for your page. */
+nav img, nav .img-fluid {
+  max-width: 150px;
+}
+
+nav .navbar-brand, nav .nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #d98555;
+}
+
+.carousel-item img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-gulp {
+  background-color: #082B59;
+}
+
+.border-gulp {
+  border-color: #d98555 !important;
+}/*# sourceMappingURL=style.css.map */
